@@ -1,4 +1,13 @@
 function findStudentById(students, id) {
+  for (let index = 0; index < students.length; index++) {
+    if (students[index].id === id) {
+      return { id: id, name: students[index].name };
+    }
+    return null;
+  }
+
+  // console.log(students);
+
   // Your code here
 }
 
